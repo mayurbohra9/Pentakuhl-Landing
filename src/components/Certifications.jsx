@@ -12,7 +12,7 @@ function MarqueeTrack() {
       {certifications.map((cert) => (
         <div
           key={cert.name}
-          className="mx-3 flex h-50 w-50 shrink-0 items-center justify-center rounded-xl bg-white p-4"
+          className="mx-3 flex h-36 w-36 shrink-0 items-center justify-center rounded-xl bg-white p-4 sm:h-44 sm:w-44 md:h-50 md:w-50"
         >
           <img src={cert.image} alt={cert.name} className="max-h-full max-w-full object-contain" />
         </div>
@@ -31,7 +31,7 @@ export default function Certifications() {
         </p>
       </div>
 
-      <div className="relative ml-65 mt-12 overflow-hidden w-250">
+      <div className="relative mt-12 w-full overflow-hidden">
         <div className="flex w-max animate-marquee">
           <MarqueeTrack />
           <MarqueeTrack />

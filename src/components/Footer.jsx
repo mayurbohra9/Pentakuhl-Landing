@@ -23,7 +23,7 @@ export default function Footer() {
     >
       <div className="mx-auto max-w-7xl px-5 py-14 lg:px-12">
         {/* India offices — 4-column grid, first col = heading */}
-        <div className="grid grid-cols-1 gap-15 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h2 className="m-0 text-2xl font-bold lg:text-[28px]">
               Our <span className="text-penta-orange">India</span> Offices

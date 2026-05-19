@@ -35,7 +35,7 @@ function CompanyLogo({ review }) {
 
 function ReviewCard({ review }) {
   return (
-    <article className="w-80 rounded-[20px] bg-white px-7 py-9 text-center shadow-[0_10px_30px_rgba(0,0,0,0.06)] sm:px-8 sm:py-10">
+    <article className="w-full max-w-sm rounded-[20px] bg-white px-7 py-9 text-center shadow-[0_10px_30px_rgba(0,0,0,0.06)] sm:px-8 sm:py-10">
       <div className="mb-5 flex justify-center sm:mb-6">
         <CompanyLogo review={review} />
       </div>
@@ -75,7 +75,7 @@ export default function Reviews() {
     <section className="bg-[#fafafa] px-5 py-16 lg:px-12 lg:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[minmax(0,380px)_1fr] lg:gap-14 xl:gap-20">
         {/* Left — heading (sticky on large screens) */}
-        <div className="lg:sticky lg:top-[calc(var(--header-height)+2rem)] lg:self-start">
+        <div className="min-[1025px]:sticky min-[1025px]:top-[calc(var(--header-height)+2rem)] min-[1025px]:self-start">
           <SectionLabel>Reviews</SectionLabel>
           <div className="mt-5">
             <SplitHeading line1="Hear From Our Satisfied" line2="Clients Worldwide." />

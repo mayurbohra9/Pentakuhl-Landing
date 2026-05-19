@@ -27,7 +27,7 @@ export default function AboutUs() {
         <img
           src="/images/about/about-plane.png"
           alt="Airplane flying through clouds at sunset"
-          className="block h-140 w-full object-cover object-center"
+          className="block h-56 w-full object-cover object-center sm:h-80 md:h-100 lg:h-140"
         />
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-white via-white/70 to-transparent sm:h-36 md:h-44 lg:h-52"

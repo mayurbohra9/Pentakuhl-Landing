@@ -9,8 +9,8 @@ function ServiceCard({ service, index }) {
 
   return (
     <article
-      className={`mb-6 flex min-h-[420px] flex-col overflow-hidden rounded-[2.5rem] shadow-sm lg:sticky lg:mb-10 lg:min-h-[480px] lg:flex-row ${
-        imageOnLeft ? '' : 'lg:flex-row-reverse'
+      className={`mb-6 flex min-h-0 flex-col overflow-hidden rounded-3xl shadow-sm min-[1025px]:sticky min-[1025px]:mb-10 min-[1025px]:min-h-[480px] min-[1025px]:flex-row min-[1025px]:rounded-[2.5rem] ${
+        imageOnLeft ? '' : 'min-[1025px]:flex-row-reverse'
       }`}
       style={{
         backgroundColor: CARD_BG,
@@ -19,7 +19,7 @@ function ServiceCard({ service, index }) {
       }}
     >
       {/* Image */}
-      <div className="relative h-56 shrink-0 lg:h-auto lg:min-h-[480px] lg:w-1/2">
+      <div className="relative h-48 shrink-0 sm:h-56 min-[1025px]:h-auto min-[1025px]:min-h-[480px] min-[1025px]:w-1/2">
         <img
           src={service.image}
           alt={service.title}
@@ -27,7 +27,7 @@ function ServiceCard({ service, index }) {
         />
         {/* Fade image into card background on the inner edge */}
         <div
-          className={`pointer-events-none absolute inset-y-0 hidden w-2/5 lg:block ${
+          className={`pointer-events-none absolute inset-y-0 hidden w-2/5 min-[1025px]:block ${
             imageOnLeft ? 'right-0' : 'left-0'
           }`}
           style={{

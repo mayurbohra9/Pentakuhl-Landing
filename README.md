@@ -82,6 +82,7 @@ The project is structured as a component-based landing page with:
 Minimal AI usage - primarily manual development with minimal AI assistance for:
 - Basic component boilerplate structure
 - Minor styling suggestions
+- Minor responsiveness suggestions
 
 ---
 

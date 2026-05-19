@@ -44,7 +44,7 @@ export default function Hero() {
         type="button"
         onClick={toggleMute}
         aria-label={muted ? 'Unmute video' : 'Mute video'}
-        className={`absolute right-6 bottom-6 z-10 flex h-11 w-11 items-center justify-center rounded-full border-0 bg-penta-orange text-white shadow-lg transition-opacity duration-300 ${
+        className={`absolute right-4 bottom-20 z-10 flex h-11 w-11 items-center justify-center rounded-full border-0 bg-penta-orange text-white shadow-lg transition-opacity duration-300 max-[1024px]:opacity-100 max-[1024px]:pointer-events-auto sm:right-6 sm:bottom-6 ${
           hovered ? 'opacity-100' : 'pointer-events-none opacity-0'
         }`}
       >

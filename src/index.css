@@ -13,7 +13,7 @@
     --header-height: 64px;
   }
 
-  @media (width >= 1024px) {
+  @media (width >= 1025px) {
     :root {
       --header-height: 72px;
     }
