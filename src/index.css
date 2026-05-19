@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+  --color-penta-orange: #e8531f;
+  --color-penta-teal: #3d5166;
+  --color-penta-kuhl: #5ba3bf;
+  --header-height: 60px;
+}
+
+@layer base {
+  :root {
+    --header-height: 64px;
+  }
+
+  @media (width >= 1024px) {
+    :root {
+      --header-height: 72px;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 overflow-x-hidden font-sans antialiased text-neutral-900;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+  /* ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #e8531f;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c94515;
+  } */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
